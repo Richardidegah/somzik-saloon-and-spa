@@ -33,24 +33,25 @@
                 <div class="flex items-center">
                     <span class="text-2xl font-playfair font-bold text-spa-gold">Sozik saloon and spa </span>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-spa-dark hover:text-spa-gold transition">Home</a>
-                    <a href="services.html" class="text-spa-dark hover:text-spa-gold transition">Services</a>
-                    <a href="about.html" class="text-spa-dark hover:text-spa-gold transition">About</a>
-                    <a href="gallery.html" class="text-spa-dark hover:text-spa-gold transition">Gallery</a>
-                    <a href="contact.html" class="text-spa-dark hover:text-spa-gold transition">Contact</a>
-        </div>
-                
-                <div id="mobileMenu" class="md:hidden hidden flex-col space-y-4 mt-4 px-6">
-                <a href="index.html" class="text-spa-dark hover:text-spa-gold transition">Home</a>
-                <a href="services.html" class="text-spa-dark hover:text-spa-gold transition">Services</a>
-                <a href="about.html" class="text-spa-dark hover:text-spa-gold transition">About</a>
-                <a href="gallery.html" class="text-spa-dark hover:text-spa-gold transition">Gallery</a>
-                <a href="contact.html" class="text-spa-dark hover:text-spa-gold transition">Contact</a>
-        </div>
+                <div class="flex justify-between items-center px-4 py-3">
+    <!-- Navigation Links -->
+    <div id="menu" class="hidden flex-col space-y-4 md:flex md:flex-row md:space-y-0 md:space-x-8">
+        <a href="index.html" class="text-spa-dark hover:text-spa-gold transition">Home</a>
+        <a href="services.html" class="text-spa-dark hover:text-spa-gold transition">Services</a>
+        <a href="about.html" class="text-spa-dark hover:text-spa-gold transition">About</a>
+        <a href="gallery.html" class="text-spa-dark hover:text-spa-gold transition">Gallery</a>
+        <a href="contact.html" class="text-spa-dark hover:text-spa-gold transition">Contact</a>
+    </div>
 
+    <!-- Hamburger Button -->
+    <button id="toggleMenu" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
+</div>
 
-            </div>
         </div>
     </nav>
 
@@ -234,15 +235,16 @@
         </div>
     </footer>
 
-
     <script>
-    const menuBtn = document.getElementById('responsive');
-    const mobileMenu = document.getElementById('mobileMenu');
+    const toggleBtn = document.getElementById('toggleMenu');
+    const menu = document.getElementById('menu');
 
-    menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+    toggleBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
     });
 </script>
+
 
    </body>
 </html>
