@@ -40,7 +40,7 @@
                     <a href="gallery.html" class="text-spa-dark hover:text-spa-gold transition">Gallery</a>
                     <a href="contact.html" class="text-spa-dark hover:text-spa-gold transition">Contact</a>
                 </div>
-                <button class="md:hidden focus:outline-none">
+                <button id="responsive" class="md:hidden focus:outline-none" >
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -231,7 +231,7 @@
 
     <script>
     function toggleMenu() {
-        const menu = document.getElementById('mobileMenu');
+        const menu = document.getElementById('responsive');
         menu.classList.toggle('hidden');
     }
     </script>
