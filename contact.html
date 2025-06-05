@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Glow Salon & Spa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'playfair': ['"Playfair Display"', 'serif'],
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'spa-pink': '#f8d7da',
+                        'spa-gold': '#d4a76a',
+                        'spa-dark': '#3a3a3a',
+                        'spa-light': '#f9f6f0',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-spa-light text-spa-dark">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <span class="text-2xl font-playfair font-bold text-spa-gold">Sozik saloon and spa </span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-spa-dark hover:text-spa-gold transition">Home</a>
+                    <a href="services.html" class="text-spa-dark hover:text-spa-gold transition">Services</a>
+                    <a href="about.html" class="text-spa-dark hover:text-spa-gold transition">About</a>
+                    <a href="gallery.html" class="text-spa-dark hover:text-spa-gold transition">Gallery</a>
+                    <a href="contact.html" class="text-spa-dark hover:text-spa-gold transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+<body class="bg-pink-50 text-gray-800">
+
+  <header class="bg-pink-100 py-6 shadow">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-3xl font-bold text-pink-700">Contact somzik Salon & Spa</h1>
+      <p class="text-pink-600 mt-1">We'd love to hear from you!</p>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-2 gap-8">
+    
+    <!-- Contact Form -->
+    <div class="bg-white p-8 rounded-2xl shadow-md">
+      <h2 class="text-2xl font-semibold text-pink-700 mb-6">Send Us a Message</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium">Name</label>
+          <input type="text" placeholder="Your name" class="w-full mt-1 p-3 border border-pink-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Email</label>
+          <input type="email" placeholder="you@example.com" class="w-full mt-1 p-3 border border-pink-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Message</label>
+          <textarea rows="5" placeholder="Tell us how we can help you..." class="w-full mt-1 p-3 border border-pink-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400"></textarea>
+        </div>
+        <button type="submit" class="bg-pink-600 hover:bg-pink-700 text-white font-medium px-6 py-3 rounded-xl transition duration-300">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="space-y-6">
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold text-pink-700 mb-2">Our Location</h3>
+        <p>Green House Junction, <br> Ifite Awka, Nigeria</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold text-pink-700 mb-2">Get in Touch</h3>
+        <p><strong>Phone:</strong>0708 590 6285
+<br>
+        <strong>Email:</strong>Ritasomtochukwu@gmail.com
+</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold text-pink-700 mb-2">Hours</h3>
+        <p>Mon – Sat: 9 AM – 7 PM<br>Sunday: Closed</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="bg-pink-100 text-center py-6 mt-10 text-pink-600 text-sm">
+    © 2025 somzik Salon & Spa. All rights reserved.
+  </footer>
+
+</body>
+</html>

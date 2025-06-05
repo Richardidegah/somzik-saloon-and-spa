@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somzik Salon & Spa | Our Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'playfair': ['"Playfair Display"', 'serif'],
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'spa-pink': '#f8c6d0',
+                        'spa-gold': '#d4af37',
+                        'spa-dark': '#3a3a3a',
+                        'spa-light': '#f9f5f0',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <span class="text-2xl font-playfair font-bold text-spa-gold">Sozik spa and saloon</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-spa-dark hover:text-spa-gold transition">Home</a>
+                    <a href="services.html" class="text-spa-dark hover:text-spa-gold transition">Services</a>
+                    <a href="about.html" class="text-spa-dark hover:text-spa-gold transition">About</a>
+                    <a href="gallery.html" class="text-spa-dark hover:text-spa-gold transition">Gallery</a>
+                    <a href="contact.html" class="text-spa-dark hover:text-spa-gold transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+<body class="bg-spa-light font-poppins text-spa-dark">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                
+                <button class="md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-spa-pink to-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="font-playfair text-4xl md:text-6xl font-bold mb-6">Our Services</h1>
+            <p class="text-lg max-w-2xl mx-auto">Indulge in our luxurious treatments designed to pamper your body, mind, and soul.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-4">Salon Services</h2>
+                <div class="w-20 h-1 bg-spa-gold mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Hair Services -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-bold mb-2">Hair Services</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Haircut & Style</span>
+                                <span class="text-spa-gold">$45+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Color & Highlights</span>
+                                <span class="text-spa-gold">$75+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Keratin Treatment</span>
+                                <span class="text-spa-gold">$150+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Extensions</span>
+                                <span class="text-spa-gold">$200+</span>
+                            </li>
+                        </ul>
+                        <button class="mt-4 px-4 py-2 bg-spa-pink text-white rounded hover:bg-opacity-90 transition">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Nail Services -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-bold mb-2">Nail Services</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Manicure</span>
+                                <span class="text-spa-gold">$30+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Pedicure</span>
+                                <span class="text-spa-gold">$45+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Gel Polish</span>
+                                <span class="text-spa-gold">$20+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Acrylic Nails</span>
+                                <span class="text-spa-gold">$50+</span>
+                            </li>
+                        </ul>
+                        <button class="mt-4 px-4 py-2 bg-spa-pink text-white rounded hover:bg-opacity-90 transition">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Makeup Services -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-bold mb-2">Makeup Services</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Basic Makeup</span>
+                                <span class="text-spa-gold">$60+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Bridal Makeup</span>
+                                <span class="text-spa-gold">$120+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Special Occasion</span>
+                                <span class="text-spa-gold">$90+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Makeup Lesson</span>
+                                <span class="text-spa-gold">$75+</span>
+                            </li>
+                        </ul>
+                        <button class="mt-4 px-4 py-2 bg-spa-pink text-white rounded hover:bg-opacity-90 transition">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spa Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-4">Spa Services</h2>
+                <div class="w-20 h-1 bg-spa-gold mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Massage -->
+                <div class="bg-spa-light rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-bold mb-2">Massage Therapies</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Swedish Massage</span>
+                                <span class="text-spa-gold">$80/hr</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Deep Tissue</span>
+                                <span class="text-spa-gold">$90/hr</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Hot Stone</span>
+                                <span class="text-spa-gold">$110/hr</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Aromatherapy</span>
+                                <span class="text-spa-gold">$95/hr</span>
+                            </li>
+                        </ul>
+                        <button class="mt-4 px-4 py-2 bg-spa-pink text-white rounded hover:bg-opacity-90 transition">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Facials -->
+                <div class="bg-spa-light rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-bold mb-2">Facials & Skin Care</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Basic Facial</span>
+                                <span class="text-spa-gold">$75</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Anti-Aging</span>
+                                <span class="text-spa-gold">$120</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Acne Treatment</span>
+                                <span class="text-spa-gold">$95</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Microdermabrasion</span>
+                                <span class="text-spa-gold">$150</span>
+                            </li>
+                        </ul>
+                        <button class="mt-4 px-4 py-2 bg-spa-pink text-white rounded hover:bg-opacity-90 transition">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Body Treatments -->
+                <div class="bg-spa-light rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-bold mb-2">Body Treatments</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Body Wrap</span>
+                                <span class="text-spa-gold">$110</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Exfoliating Scrub</span>
+                                <span class="text-spa-gold">$85</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Detox Treatment</span>
+                                <span class="text-spa-gold">$130</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Cellulite Treatment</span>
+                                <span class="text-spa-gold">$150</span>
+                            </li>
+                        </ul>
+                        <button class="mt-4 px-4 py-2 bg-spa-pink text-white rounded hover:bg-opacity-90 transition">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="py-16 bg-spa-pink bg-opacity-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-4">Special Packages</h2>
+                <div class="w-20 h-1 bg-spa-gold mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Package 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6 text-center">
+                        <h3 class="font-playfair text-2xl font-bold mb-2">Bridal Package</h3>
+                        <p class="text-spa-gold text-xl font-medium mb-4">$350</p>
+                        <ul class="space-y-3 mb-6">
+                            <li>Bridal Hair Styling</li>
+                            <li>Bridal Makeup Application</li>
+                            <li>Manicure & Pedicure</li>
+                            <li>Relaxing Facial</li>
+                            <li>Complimentary Champagne</li>
+                        </ul>
+                        <button class="px-6 py-3 bg-spa-gold text-white rounded hover:bg-opacity-90 transition">Book Package</button>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform scale-105 z-10">
+                    <div class="p-6 text-center">
+                        <div class="bg-spa-gold text-white py-1 px-4 inline-block rounded-full mb-4 text-sm">Most Popular</div>
+                        <h3 class="font-playfair text-2xl font-bold mb-2">Ultimate Spa Day</h3>
+                        <p class="text-spa-gold text-xl font-medium mb-4">$280</p>
+                        <ul class="space-y-3 mb-6">
+                            <li>60-min Swedish Massage</li>
+                            <li>Signature Facial</li>
+                            <li>Body Scrub & Wrap</li>
+                            <li>Manicure & Pedicure</li>                        <button class="px-6 py-3 bg-spa-gold text-white rounded hover:bg-opacity-90 transition">Book Package</button>
+
+                            <li>Lunch & Herbal Tea</li>
+                        </ul>
+                        <button class="px-6 py-3 bg-spa-gold text-white rounded hover:bg-opacity-90 transition">Book Package</button>
+                    </div>
+                </div>
+
+
+                <!-- Package 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6 text-center">
+                        <h3 class="font-playfair text-2xl font-bold mb-2">Glamour Makeover</h3>
+                        <p class="text-spa-gold text-xl font-medium mb-4">$220</p>
+                        <ul class="space-y-3 mb-6">
+                            <li>Haircut & Style</li>
+                            <li>Full Makeup Application</li>
+                            <li>Eyebrow Shaping</li>
+                            <li>Lash Extensions</li>
+                            <li>Professional Photo Session</li>
+                        </ul>
+                        <button class="px-6 py-3 bg-spa-gold text-white rounded hover:bg-opacity-90 transition">Book Package</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-spa-dark text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-6">Ready to Experience Luxury?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Book your appointment today and let our experts pamper you with our premium services.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <button class="px-8 py-3 bg-spa-gold rounded hover:bg-opacity-90 transition">Book Now</button>
+                <button class="px-8 py-3 border border-white rounded hover:bg-white hover:text-spa-dark transition">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-spa-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Luxury</h3>
+                    <p class="mb-4">Your premier destination for beauty and wellness services.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg></a>
+                        <a href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.023.047 1.351.058 3.807.058h.468c2.456 0 2.784-.011 3.807-.058.975-.045 1.504-.207 1.857-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.047-1.023.058-1.351.058-3.807v-.468c0-2.456-.011-2.784-.058-3.807-.045-.975-.207-1.504-.344-1.857a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path></svg></a>
+                        <a href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-spa-gold transition">Home</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">Services</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">Gallery</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-spa-gold transition">Hair Services</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">Nail Services</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">Makeup</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">Massage</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">Facials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Contact</h3>
+                    <address class="not-italic">
+                        <p class="mb-2">123 Beauty Avenue</p>
+                        <p class="mb-2">New York, NY 10001</p>
+                        <p class="mb-2">Phone: (555) 123-4567</p>
+                        <p class="mb-2">Email: info@luxurysalon.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center">
+                <p>&copy; 2023 Luxury Salon & Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Salon & Spa | Our Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'playfair': ['"Playfair Display"', 'serif'],
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'spa-pink': '#f8c6d0',
+                        'spa-gold': '#d4af37',
+                        'spa-dark': '#3a3a3a',
+                        'spa-light': '#f9f5f0',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-spa-light font-poppins text-spa-dark">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-playfair font-bold text-spa-gold">Luxury</div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="hover:text-spa-gold">Home</a>
+                    <a href="#" class="text-spa-gold font-medium">Services</a>
+                    <a href="#" class="hover:text-spa-gold">About</a>
+                    <a href="#" class="hover:text-spa-gold">Gallery</a>
+                    <a href="#" class="hover:text-spa-gold">Contact</a>
+                </nav>
+                <button class="md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-spa-pink to-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="font-playfair text-4xl md:text-6xl font-bold mb-6">Our Services</h1>
+            <p class="text-lg max-w-2xl mx-auto">Indulge in our luxurious treatments designed to pamper your body, mind, and soul.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-4">Salon Services</h2>
+                <div class="w-20 h-1 bg-spa-gold mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Hair Services -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-bold mb-2">Hair Services</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Haircut & Style</span>
+                                <span class="text-spa-gold">$45+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Color & Highlights</span>
+                                <span class="text-spa-gold">$75+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Keratin Treatment</span>
+                                <span class="text-spa-gold">$150+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Extensions</span>
+                                <span class="text-spa-gold">$200+</span>
+                            </li>
+                        </ul>
+                        <button class="mt-4 px-4 py-2 bg-spa-pink text-white rounded hover:bg-opacity-90 transition">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Nail Services -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-bold mb-2">Nail Services</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Manicure</span>
+                                <span class="text-spa-gold">$30+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Pedicure</span>
+                                <span class="text-spa-gold">$45+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Gel Polish</span>
+                                <span class="text-spa-gold">$20+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Acrylic Nails</span>
+                                <span class="text-spa-gold">$50+</span>
+                            </li>
+                        </ul>
+                        <button class="mt-4 px-4 py-2 bg-spa-pink text-white rounded hover:bg-opacity-90 transition">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Makeup Services -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-bold mb-2">Makeup Services</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Basic Makeup</span>
+                                <span class="text-spa-gold">$60+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Bridal Makeup</span>
+                                <span class="text-spa-gold">$120+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Special Occasion</span>
+                                <span class="text-spa-gold">$90+</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Makeup Lesson</span>
+                                <span class="text-spa-gold">$75+</span>
+                            </li>
+                        </ul>
+                        <button class="mt-4 px-4 py-2 bg-spa-pink text-white rounded hover:bg-opacity-90 transition">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spa Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-4">Spa Services</h2>
+                <div class="w-20 h-1 bg-spa-gold mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Massage -->
+                <div class="bg-spa-light rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-bold mb-2">Massage Therapies</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Swedish Massage</span>
+                                <span class="text-spa-gold">$80/hr</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Deep Tissue</span>
+                                <span class="text-spa-gold">$90/hr</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Hot Stone</span>
+                                <span class="text-spa-gold">$110/hr</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Aromatherapy</span>
+                                <span class="text-spa-gold">$95/hr</span>
+                            </li>
+                        </ul>
+                        <button class="mt-4 px-4 py-2 bg-spa-pink text-white rounded hover:bg-opacity-90 transition">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Facials -->
+                <div class="bg-spa-light rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-bold mb-2">Facials & Skin Care</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Basic Facial</span>
+                                <span class="text-spa-gold">$75</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Anti-Aging</span>
+                                <span class="text-spa-gold">$120</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Acne Treatment</span>
+                                <span class="text-spa-gold">$95</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Microdermabrasion</span>
+                                <span class="text-spa-gold">$150</span>
+                            </li>
+                        </ul>
+                        <button class="mt-4 px-4 py-2 bg-spa-pink text-white rounded hover:bg-opacity-90 transition">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Body Treatments -->
+                <div class="bg-spa-light rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-bold mb-2">Body Treatments</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Body Wrap</span>
+                                <span class="text-spa-gold">$110</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Exfoliating Scrub</span>
+                                <span class="text-spa-gold">$85</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Detox Treatment</span>
+                                <span class="text-spa-gold">$130</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Cellulite Treatment</span>
+                                <span class="text-spa-gold">$150</span>
+                            </li>
+                        </ul>
+                        <button class="mt-4 px-4 py-2 bg-spa-pink text-white rounded hover:bg-opacity-90 transition">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="py-16 bg-spa-pink bg-opacity-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-4">Special Packages</h2>
+                <div class="w-20 h-1 bg-spa-gold mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Package 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6 text-center">
+                        <h3 class="font-playfair text-2xl font-bold mb-2">Bridal Package</h3>
+                        <p class="text-spa-gold text-xl font-medium mb-4">$350</p>
+                        <ul class="space-y-3 mb-6">
+                            <li>Bridal Hair Styling</li>
+                            <li>Bridal Makeup Application</li>
+                            <li>Manicure & Pedicure</li>
+                            <li>Relaxing Facial</li>
+                            <li>Complimentary Champagne</li>
+                        </ul>
+                        <button class="px-6 py-3 bg-spa-gold text-white rounded hover:bg-opacity-90 transition">Book Package</button>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform scale-105 z-10">
+                    <div class="p-6 text-center">
+                        <div class="bg-spa-gold text-white py-1 px-4 inline-block rounded-full mb-4 text-sm">Most Popular</div>
+                        <h3 class="font-playfair text-2xl font-bold mb-2">Ultimate Spa Day</h3>
+                        <p class="text-spa-gold text-xl font-medium mb-4">$280</p>
+                        <ul class="space-y-3 mb-6">
+                            <li>60-min Swedish Massage</li>
+                            <li>Signature Facial</li>
+                            <li>Body Scrub & Wrap</li>
+                            <li>Manicure & Pedicure</li>
+                            <li>Lunch & Herbal Tea</li>
+                        </ul>
+                        <button class="px-6 py-3 bg-spa-gold text-white rounded hover:bg-opacity-90 transition">Book Package</button>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6 text-center">
+                        <h3 class="font-playfair text-2xl font-bold mb-2">Glamour Makeover</h3>
+                        <p class="text-spa-gold text-xl font-medium mb-4">$220</p>
+                        <ul class="space-y-3 mb-6">
+                            <li>Haircut & Style</li>
+                            <li>Full Makeup Application</li>
+                            <li>Eyebrow Shaping</li>
+                            <li>Lash Extensions</li>
+                            <li>Professional Photo Session</li>
+                        </ul>
+                        <button class="px-6 py-3 bg-spa-gold text-white rounded hover:bg-opacity-90 transition">Book Package</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-spa-dark text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-6">Ready to Experience Luxury?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Book your appointment today and let our experts pamper you with our premium services.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <button class="px-8 py-3 bg-spa-gold rounded hover:bg-opacity-90 transition">Book Now</button>
+                <button class="px-8 py-3 border border-white rounded hover:bg-white hover:text-spa-dark transition">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-spa-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Luxury</h3>
+                    <p class="mb-4">Your premier destination for beauty and wellness services.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg></a>
+                        <a href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.023.047 1.351.058 3.807.058h.468c2.456 0 2.784-.011 3.807-.058.975-.045 1.504-.207 1.857-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.047-1.023.058-1.351.058-3.807v-.468c0-2.456-.011-2.784-.058-3.807-.045-.975-.207-1.504-.344-1.857a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path></svg></a>
+                        <a href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-spa-gold transition">Home</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">Services</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">Gallery</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-spa-gold transition">Hair Services</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">Nail Services</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">Makeup</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">Massage</a></li>
+                        <li><a href="#" class="hover:text-spa-gold transition">Facials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Contact</h3>
+                    <address class="not-italic">
+                        <p class="mb-2">123 Beauty Avenue</p>
+                        <p class="mb-2">New York, NY 10001</p>
+                        <p class="mb-2">Phone: (555) 123-4567</p>
+                        <p class="mb-2">Email: info@luxurysalon.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center">
+                <p>&copy; 2023 Luxury Salon & Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+</body>
+</html>
